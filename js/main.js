@@ -441,7 +441,7 @@ var content = `
 探索更多,去我的博客看看吧!
 祝你玩的愉快qwq
 
-博客:  https://www.happyking.top
+博客:  https://blog.happyking.top
 Github:  https://github.com/XINGMOUREN
 `
 console.log(`%c${title1} %c${title2}
