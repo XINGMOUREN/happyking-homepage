@@ -6,7 +6,7 @@
 
 请不要随便调用我源代码里面的天气api谢谢!
 
-## [点我前往主页](www.happyking.top)
+## [点我前往主页](https://www.happyking.top)
 
-## [点我前往博客](blog.happyking.top)
+## [点我前往博客](https://blog.happyking.top)
 
