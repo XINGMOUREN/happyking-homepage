@@ -400,7 +400,6 @@ document.oncontextmenu = function () {
 }
 
 //控制台输出
-console.clear();
 var styleTitle1 = `
 font-size: 20px;
 font-weight: 600;
