@@ -454,6 +454,9 @@ var title2 = `
 `
 var content = `
 ❌你知道的太多了❌
+驱动内核-Spring-已载入🌎
+版本:Beta-迎春-12.32.5
+“桃李春迎一杯酒,江湖夜雨十年灯.”
 `
 console.log(`%c${title1} %c${title2}
 %c${content}`, styleTitle1, styleTitle2, styleContent)
