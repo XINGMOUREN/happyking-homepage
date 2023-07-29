@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>HappyKingの主页</title>
+    <link rel='Shortcut Icon' type='image/x-icon' href='https://cdn1.tianli0.top/npm/happyking/link/1.webp'>
+    <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
+    <link href="./css/animate.css" rel="stylesheet">
+    <script type="text/javascript" src="./component/layer-v3.0.3/layer/layer.js"></script>
+    <link rel="stylesheet" href="./component/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="./css/default.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/win10.js"></script>
+    <style>
+        * {
+            font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu
+        }
+        /*磁贴自定义样式*/
+        .win10-block-content-text {
+            line-height: 44px;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        Win10.onReady(function () {
+
+            //设置壁纸
+            Win10.setBgUrl({
+                main:'./img/wallpapers/wallpaper.webp',
+                mobile:'https://cdn1.tianli0.top/npm/happyking/other/2.webp',
+            });
+
+            Win10.setAnimated([
+                'animated flip',
+                'animated bounceIn',
+            ], 0.01);
+
+            setTimeout(function () {
+                Win10.newMsg('来自小王的留言', '可不可以给小王的blog点个收藏啊!')
+            }, 2500);
+
+            setTimeout(function () {
+                Win10.openUrl('./note.html','<i class="fa fa-newspaper-o icon red"></i>最新资讯',[['300px', '380px'],'rt'])
+            },2000);
+
+
+        });
+
+    </script>
+</head>
+<body>
+<div id="win10">
+    <div class="desktop">
+        <div id="win10-shortcuts" class="shortcuts-hidden">
+            <div class="shortcut"
+                 onclick="Win10.openUrl('https://happyking.top/',
+                 '<img class=\'icon\' src=\'https://home.happyking.top/favicon.png\'/>欢乐小王的博客')">
+                <img class="icon" src="https://home.happyking.top/favicon.png"/>
+                <div class="title">小王的博客</div>
+            </div>
+            <div class="shortcut"
+                 onclick="Win10.openUrl('https://cn.bing.com/',
+                 '<img class=\'icon\' src=\'https://cdn1.tianli0.top/npm/happyking/other/1.webp\'/>浏览器')">
+                <img class="icon" src="https://cdn1.tianli0.top/npm/happyking/other/1.webp"/>
+                <div class="title">浏览器</div>
+            </div>
+            <div class="shortcut"
+                 onclick="Win10.openUrl('https://jcw87.github.io/c2-sans-fight/',
+                 '<img class=\'icon\' src=\'https://jcw87.github.io/c2-sans-fight/icon-256.png\'/>bad time')">
+                <img class="icon" src="https://jcw87.github.io/c2-sans-fight/icon-256.png"/>
+                <div class="title">bad time模拟器</div>
+            </div>
+            <div class="shortcut" onclick='Win10.openUrl("./login.html","<i class=\"fa fa-user icon black-green\"></i>示例登录页")'>
+                <i class="fa fa-user icon black-green"></i>
+                <div class="title">示例登录页（开发中）</div>
+            </div>
+        </div>
+        <div id="win10-desktop-scene"></div>
+    </div>
+    <div id="win10-menu" class="hidden">
+        <div class="list win10-menu-hidden animated animated-slideOutLeft">
+            <div class="item"><i class="red icon fa fa-wrench fa-fw"></i><span>API测试</span></div>
+            <div class="sub-item" onclick="Win10.commandCenterOpen()">打开消息中心</div>
+            <div class="sub-item" onclick="Win10.newMsg('API测试','通过API可以发送消息至消息中心，自定义标题与内容(点击我试试)',function() {alert('click')})">发送带回调的消息</div>
+            <div class="sub-item" onclick="Win10.menuClose()">关闭菜单</div>
+            <div class="item" onclick="Win10.aboutUs()"><i class="purple icon fa fa-info-circle fa-fw"></i>关于</div>
+            <div class="item" onclick=" Win10.exit();"><i class="black icon fa fa-power-off fa-fw"></i>关闭</div>
+        </div>
+        <div class="blocks">
+            <div class="menu_group">
+                <div class="title">
+                    应用示例
+                </div>
+            </div>
+        </div>
+        <div id="win10-menu-switcher"></div>
+    </div>
+    <div id="win10_command_center" class="hidden_right">
+        <div class="title">
+            <h4 style="float: left">消息中心 </h4>
+            <span id="win10_btn_command_center_clean_all">全部清除</span>
+        </div>
+        <div class="msgs"></div>
+    </div>
+    <div id="win10_task_bar">
+        <div id="win10_btn_group_left" class="btn_group">
+            <div id="win10_btn_win" class="btn"><span class="fa fa-windows"></span></div>
+            <div class="btn" id="win10-btn-browser"><span class="fa fa-internet-explorer"></span></div>
+        </div>
+        <div id="win10_btn_group_middle" class="btn_group"></div>
+        <div id="win10_btn_group_right" class="btn_group">
+            <div class="btn" id="win10_btn_time">
+                <!--0:00<br/>-->
+                <!--1993/8/13-->
+            </div>
+            <div class="btn" id="win10_btn_command"><span id="win10-msg-nof" class="fa fa-comment-o"></span></div>
+            <div class="btn" id="win10_btn_show_desktop"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
