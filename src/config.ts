@@ -1,8 +1,8 @@
 export const site = {
     author: 'HappyKing',
     slogan: '遇事不決,可問春風',
-    description: '',
-    keywords: '',
+    description: 'HappyKing的个人主页homepage',
+    keywords: 'HappyKing',
     favicon: '/avatar.webp',
     url: 'https://happyking.top'
 }
@@ -34,7 +34,7 @@ export const navs = [
 ]
 
 export const aboutMe = {
-    avatar_url: 'https://q.qlogo.cn/g?b=qq&nk=1633198089&s=640',
+    avatar_url: 'https://blog.happyking.top/img/avatar.webp',
     left_tags: [
         '🤖️ 数码科技爱好者',
         '🔍 分享与热心帮助',
