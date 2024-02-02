@@ -1,0 +1,11 @@
+---
+import { third } from "src/config";
+const laScript = `LA.init({id:"${third.use51la.id}",ck:"${third.use51la.ck}"})`
+---
+
+{
+    third.use51la.enabled ? (
+        <script is:inline charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script is:inline set:html={laScript}></script>
+    ) : null
+}

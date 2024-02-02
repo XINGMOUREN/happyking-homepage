@@ -1,0 +1,51 @@
+---
+import { mediaLink } from "src/config";
+---
+
+<section id="media-link">
+    {
+        mediaLink.links.map(link => (
+            <a class="link-item" href={link.href} title={link.name}>
+                <div class="icon" style={`background-image: url(${link.icon})`}></div>
+            </a>
+        ))
+    }
+</section>
+
+<style>
+#media-link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+#media-link::before,
+#media-link::after{
+    content: "";
+    flex: 1 1 0;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--border-color);
+}
+#media-link .link-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    background: var(--card-bg);
+    border: 3px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 0.5em;
+}
+#media-link .link-item:is(:hover, :focus-within){
+    background: var(--card-hover-bg);
+}
+#media-link .link-item .icon{
+    width: 1.5em;
+    height: 1.5em;
+    background-size: cover;
+    background-position: center;
+}
+</style>
