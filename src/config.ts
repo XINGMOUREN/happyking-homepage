@@ -48,7 +48,7 @@ export const aboutMe = {
 }
 
 export const project = {
-    github_name: 'dorakika',
+    github_name: 'XINGMOUREN',
     filter_readme: true,
     filter_fork: true
 }
