@@ -3,13 +3,13 @@ export const site = {
     slogan: '遇事不決,可問春風',
     description: '',
     keywords: '',
-    favicon: '/favicon.ico',
+    favicon: '/avatar.webp',
     url: 'https://happyking.top'
 }
 export const footer = {
     beian: {
         enabled: true,
-        value: '皖ICP备2022003488号'
+        value: '鲁ICP备2022030058号-1'
     },
     live: {
         enabled: true,
