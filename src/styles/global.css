@@ -63,7 +63,7 @@ html::-webkit-scrollbar{
     height: 0;
 }
 html{
-    background-image: url('/images/bg.webp');
+    background-image: url('/images/bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
