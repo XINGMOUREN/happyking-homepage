@@ -1,6 +1,6 @@
 {
     "title": "HappyKingの主页",
-    "description": "聚散無常，别来无恙.",
+    "description": "遇事不決,可問春風.",
     "keywords": "HappyKing,个人主页",
     "author": "HappyKing",
     "logo_img": "./img/icon/logo.png",
@@ -8,11 +8,11 @@
     "logo_text_2": "top",
     "des_title": [
         "Hello World !",
-        "聚散無常，别来无恙."
+        "遇事不決,可問春風."
     ],
     "des_title_change": [
         "Oops !",
-        "哎呀，这都被你发现了 ( 再点击一次可关闭 )"
+        "再点击一次可关闭"
     ],
     "github": "XINGMOUREN",
     "qq": "2638526782",
