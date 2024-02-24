@@ -1,8 +1,8 @@
 {
-    "title": "欢乐小王の主页",
+    "title": "HappyKingの主页",
     "description": "聚散無常，别来无恙.",
-    "keywords": "欢乐小王,个人主页",
-    "author": "欢乐小王",
+    "keywords": "HappyKing,个人主页",
+    "author": "HappyKing",
     "logo_img": "./img/icon/logo.png",
     "logo_text_1": "happyking",
     "logo_text_2": "top",
@@ -65,5 +65,5 @@
         ]
     ],
     "Copyright_year": "2022",
-    "Copyright_text": "欢乐小王"
+    "Copyright_text": "HappyKing"
 }

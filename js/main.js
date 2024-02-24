@@ -412,7 +412,7 @@ color: rgb(244,167,89);
 var styleContent = `
 color: rgb(30,152,255);
 `
-var title1 = '欢乐小王の主页'
+var title1 = 'HappyKingの主页'
 var title2 = `
 ======================================================================
                                                                      
